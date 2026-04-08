@@ -49,7 +49,7 @@
 
             .cards {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 gap: 20px;
             }
 
@@ -57,9 +57,13 @@
                 background: white;
                 border-radius: 10px;
                 padding: 20px;
-                width: calc(33% - 20px);
                 box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             }
+                  img {
+                      width: 400px;
+                      height: 350px;
+                      object-fit: cover;
+                }
 
             .card h3 {
                 font-size: 1.1rem;
@@ -79,102 +83,149 @@
       </head>
       <body>
         <header>
-            <h1>Viajes Horizonte</h1>
-            <p>Descubre el mundo con nosotros</p>
+          <h1>Viajes Horizonte</h1>
+          <p>Descubre el mundo con nosotros</p>
         </header>
-
         <div class="seccion">
-            <h2>Playa</h2>
-            <div class="cards">
-                <xsl:for-each select="//paquete[categoria='playa']">
-                    <div class="card">
-                        <h3><xsl:value-of select="nombre"/></h3>
-                        <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
-                        <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
-                        <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
-                        <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
-                        <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
-                        <p>
-                            <xsl:choose>
-                                <xsl:when test="plazas_disponibles = 0"><span class="agotado">Agotado</span></xsl:when>
-                                <xsl:when test="plazas_disponibles &lt;= 3"><span class="ultimas">Ultimas plazas</span></xsl:when>
-                                <xsl:otherwise><span class="disponible">Disponible</span></xsl:otherwise>
-                            </xsl:choose>
-                        </p>
-                    </div>
-                </xsl:for-each>
-            </div>
+          <h2>Playa</h2>
+          <div class="cards">
+            <xsl:for-each select="//paquete[categoria='playa']">
+              <div class="card">
+                <h3>
+                  <xsl:value-of select="nombre"/>
+                </h3>
+                <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
+                <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
+                <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
+                <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
+                <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="imagen"/>
+                  </xsl:attribute>
+                </img>
+                <p>
+                  <xsl:choose>
+                    <xsl:when test="plazas_disponibles = 0">
+                      <span class="agotado">Agotado</span>
+                    </xsl:when>
+                    <xsl:when test="plazas_disponibles &lt;= 3">
+                      <span class="ultimas">Ultimas plazas</span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <span class="disponible">Disponible</span>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </p>
+              </div>
+            </xsl:for-each>
+          </div>
         </div>
-
         <div class="seccion">
-            <h2>Cultural</h2>
-            <div class="cards">
-                <xsl:for-each select="//paquete[categoria='cultural']">
-                    <div class="card">
-                        <h3><xsl:value-of select="nombre"/></h3>
-                        <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
-                        <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
-                        <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
-                        <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
-                        <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
-                        <p>
-                            <xsl:choose>
-                                <xsl:when test="plazas_disponibles = 0"><span class="agotado">Agotado</span></xsl:when>
-                                <xsl:when test="plazas_disponibles &lt;= 3"><span class="ultimas">Ultimas plazas</span></xsl:when>
-                                <xsl:otherwise><span class="disponible">Disponible</span></xsl:otherwise>
-                            </xsl:choose>
-                        </p>
-                    </div>
-                </xsl:for-each>
-            </div>
+          <h2>Cultural</h2>
+          <div class="cards">
+            <xsl:for-each select="//paquete[categoria='cultural']">
+              <div class="card">
+                <h3>
+                  <xsl:value-of select="nombre"/>
+                </h3>
+                <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
+                <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
+                <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
+                <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
+                <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="imagen"/>
+                  </xsl:attribute>
+                </img>
+                <p>
+                  <xsl:choose>
+                    <xsl:when test="plazas_disponibles = 0">
+                      <span class="agotado">Agotado</span>
+                    </xsl:when>
+                    <xsl:when test="plazas_disponibles &lt;= 3">
+                      <span class="ultimas">Ultimas plazas</span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <span class="disponible">Disponible</span>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </p>
+              </div>
+            </xsl:for-each>
+          </div>
         </div>
-
         <div class="seccion">
-            <h2>Aventura</h2>
-            <div class="cards">
-                <xsl:for-each select="//paquete[categoria='aventura']">
-                    <div class="card">
-                        <h3><xsl:value-of select="nombre"/></h3>
-                        <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
-                        <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
-                        <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
-                        <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
-                        <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
-                        <p>
-                            <xsl:choose>
-                                <xsl:when test="plazas_disponibles = 0"><span class="agotado">Agotado</span></xsl:when>
-                                <xsl:when test="plazas_disponibles &lt;= 3"><span class="ultimas">Ultimas plazas</span></xsl:when>
-                                <xsl:otherwise><span class="disponible">Disponible</span></xsl:otherwise>
-                            </xsl:choose>
-                        </p>
-                    </div>
-                </xsl:for-each>
-            </div>
+          <h2>Aventura</h2>
+          <div class="cards">
+            <xsl:for-each select="//paquete[categoria='aventura']">
+              <div class="card">
+                <h3>
+                  <xsl:value-of select="nombre"/>
+                </h3>
+                <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
+                <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
+                <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
+                <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
+                <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="imagen"/>
+                  </xsl:attribute>
+                </img>
+                <p>
+                  <xsl:choose>
+                    <xsl:when test="plazas_disponibles = 0">
+                      <span class="agotado">Agotado</span>
+                    </xsl:when>
+                    <xsl:when test="plazas_disponibles &lt;= 3">
+                      <span class="ultimas">Ultimas plazas</span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <span class="disponible">Disponible</span>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </p>
+              </div>
+            </xsl:for-each>
+          </div>
         </div>
-
         <div class="seccion">
-            <h2>Ciudad</h2>
-            <div class="cards">
-                <xsl:for-each select="//paquete[categoria='ciudad']">
-                    <div class="card">
-                        <h3><xsl:value-of select="nombre"/></h3>
-                        <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
-                        <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
-                        <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
-                        <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
-                        <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
-                        <p>
-                            <xsl:choose>
-                                <xsl:when test="plazas_disponibles = 0"><span class="agotado">Agotado</span></xsl:when>
-                                <xsl:when test="plazas_disponibles &lt;= 3"><span class="ultimas">Ultimas plazas</span></xsl:when>
-                                <xsl:otherwise><span class="disponible">Disponible</span></xsl:otherwise>
-                            </xsl:choose>
-                        </p>
-                    </div>
-                </xsl:for-each>
-            </div>
+          <h2>Ciudad</h2>
+          <div class="cards">
+            <xsl:for-each select="//paquete[categoria='ciudad']">
+              <div class="card">
+                <h3>
+                  <xsl:value-of select="nombre"/>
+                </h3>
+                <p>Destino: <xsl:value-of select="destino/ciudad"/>, <xsl:value-of select="destino/pais"/></p>
+                <p>Duracion: <xsl:value-of select="duracion_dias"/> dias</p>
+                <p>Fecha de salida: <xsl:value-of select="fecha_salida"/></p>
+                <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
+                <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
+                <img>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="imagen"/>
+                  </xsl:attribute>
+                </img>
+                <p>
+                  <xsl:choose>
+                    <xsl:when test="plazas_disponibles = 0">
+                      <span class="agotado">Agotado</span>
+                    </xsl:when>
+                    <xsl:when test="plazas_disponibles &lt;= 3">
+                      <span class="ultimas">Ultimas plazas</span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <span class="disponible">Disponible</span>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </p>
+              </div>
+            </xsl:for-each>
+          </div>
         </div>
-
       </body>
     </html>
   </xsl:template>
