@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>Viajes Horizonte</title>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            header {
+                background-color: #1a73e8;
+                color: white;
+                padding: 30px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                margin-top: 8px;
+                font-size: 1rem;
+                opacity: 0.85;
+            }
+
+            .seccion {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .seccion h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                padding-bottom: 8px;
+                border-bottom: 3px solid #1a73e8;
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .card {
+                background: white;
+                border-radius: 10px;
+                padding: 20px;
+                width: calc(33% - 20px);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+
+            .card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+                color: #1a73e8;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+                margin-bottom: 6px;
+            }
+
+            .agotado { color: red; font-weight: bold; }
+            .ultimas { color: orange; font-weight: bold; }
+            .disponible { color: green; font-weight: bold; }
+        </style>
+  </head>
+  <body>
+    <header>
+      <h1>Viajes Horizonte</h1>
+      <p>Descubre el mundo con nosotros</p>
+    </header>
+    <div class="seccion">
+      <h2>Playa</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cancún Todo Incluido</h3>
+          <p>Destino: Cancún, México</p>
+          <p>Duracion: 7 dias</p>
+          <p>Fecha de salida: 2025-06-15</p>
+          <p>Precio: 1299 EUR</p>
+          <p>Plazas disponibles: 3</p>
+          <p>
+            <span class="ultimas">Ultimas plazas</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Maldivas Relax</h3>
+          <p>Destino: Atolón Malé Norte, Maldivas</p>
+          <p>Duracion: 8 dias</p>
+          <p>Fecha de salida: 2025-08-10</p>
+          <p>Precio: 3999 EUR</p>
+          <p>Plazas disponibles: 2</p>
+          <p>
+            <span class="ultimas">Ultimas plazas</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Costa Amalfitana</h3>
+          <p>Destino: Nápoles - Positano - Amalfi, Italia</p>
+          <p>Duracion: 6 dias</p>
+          <p>Fecha de salida: 2025-06-28</p>
+          <p>Precio: 1100 EUR</p>
+          <p>Plazas disponibles: 7</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="seccion">
+      <h2>Cultural</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Ruta por Japón</h3>
+          <p>Destino: Tokio - Kioto - Osaka, Japón</p>
+          <p>Duracion: 12 dias</p>
+          <p>Fecha de salida: 2025-04-03</p>
+          <p>Precio: 2850 EUR</p>
+          <p>Plazas disponibles: 0</p>
+          <p>
+            <span class="agotado">Agotado</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Escapada a Roma</h3>
+          <p>Destino: Roma, Italia</p>
+          <p>Duracion: 4 dias</p>
+          <p>Fecha de salida: 2025-05-01</p>
+          <p>Precio: 650 EUR</p>
+          <p>Plazas disponibles: 14</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Semana Santa en Marrakech</h3>
+          <p>Destino: Marrakech, Marruecos</p>
+          <p>Duracion: 5 dias</p>
+          <p>Fecha de salida: 2025-04-13</p>
+          <p>Precio: 780 EUR</p>
+          <p>Plazas disponibles: 1</p>
+          <p>
+            <span class="ultimas">Ultimas plazas</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="seccion">
+      <h2>Aventura</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Safari en Kenia</h3>
+          <p>Destino: Nairobi - Masái Mara, Kenia</p>
+          <p>Duracion: 10 dias</p>
+          <p>Fecha de salida: 2025-07-20</p>
+          <p>Precio: 3400 EUR</p>
+          <p>Plazas disponibles: 5</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Trekking en Nepal</h3>
+          <p>Destino: Katmandú - Base Everest, Nepal</p>
+          <p>Duracion: 14 dias</p>
+          <p>Fecha de salida: 2025-10-05</p>
+          <p>Precio: 2200 EUR</p>
+          <p>Plazas disponibles: 8</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Aventura en Patagonia</h3>
+          <p>Destino: Bariloche - Torres del Paine, Argentina</p>
+          <p>Duracion: 11 dias</p>
+          <p>Fecha de salida: 2025-12-01</p>
+          <p>Precio: 2600 EUR</p>
+          <p>Plazas disponibles: 4</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="seccion">
+      <h2>Ciudad</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Nueva York City Break</h3>
+          <p>Destino: Nueva York, Estados Unidos</p>
+          <p>Duracion: 5 dias</p>
+          <p>Fecha de salida: 2025-11-28</p>
+          <p>Precio: 1450 EUR</p>
+          <p>Plazas disponibles: 11</p>
+          <p>
+            <span class="disponible">Disponible</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
