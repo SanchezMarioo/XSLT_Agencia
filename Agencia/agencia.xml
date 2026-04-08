@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="agencia.xslt"?>
+
+<agencia nombre="Viajes Horizonte">
+  <paquetes>
+
+    <paquete id="P001">
+      <nombre>Cancún Todo Incluido</nombre>
+      <destino>
+        <pais>México</pais>
+        <ciudad>Cancún</ciudad>
+        <continente>América</continente>
+      </destino>
+      <categoria>playa</categoria>
+      <duracion_dias>7</duracion_dias>
+      <fecha_salida>2025-06-15</fecha_salida>
+      <precio_persona>1299</precio_persona>
+      <plazas_totales>20</plazas_totales>
+      <plazas_disponibles>3</plazas_disponibles>
+      <valoracion>4.8</valoracion>
+      <oferta>si</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Hotel 5 estrellas</item>
+        <item>Traslados aeropuerto</item>
+        <item>Todo incluido</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P002">
+      <nombre>Ruta por Japón</nombre>
+      <destino>
+        <pais>Japón</pais>
+        <ciudad>Tokio - Kioto - Osaka</ciudad>
+        <continente>Asia</continente>
+      </destino>
+      <categoria>cultural</categoria>
+      <duracion_dias>12</duracion_dias>
+      <fecha_salida>2025-04-03</fecha_salida>
+      <precio_persona>2850</precio_persona>
+      <plazas_totales>15</plazas_totales>
+      <plazas_disponibles>0</plazas_disponibles>
+      <valoracion>5.0</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Hoteles 4 estrellas</item>
+        <item>Guía turístico en español</item>
+        <item>Transporte entre ciudades</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P003">
+      <nombre>Safari en Kenia</nombre>
+      <destino>
+        <pais>Kenia</pais>
+        <ciudad>Nairobi - Masái Mara</ciudad>
+        <continente>África</continente>
+      </destino>
+      <categoria>aventura</categoria>
+      <duracion_dias>10</duracion_dias>
+      <fecha_salida>2025-07-20</fecha_salida>
+      <precio_persona>3400</precio_persona>
+      <plazas_totales>12</plazas_totales>
+      <plazas_disponibles>5</plazas_disponibles>
+      <valoracion>4.9</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Lodge en parque natural</item>
+        <item>Excursiones de safari</item>
+        <item>Guía especializado en fauna</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P004">
+      <nombre>Escapada a Roma</nombre>
+      <destino>
+        <pais>Italia</pais>
+        <ciudad>Roma</ciudad>
+        <continente>Europa</continente>
+      </destino>
+      <categoria>cultural</categoria>
+      <duracion_dias>4</duracion_dias>
+      <fecha_salida>2025-05-01</fecha_salida>
+      <precio_persona>650</precio_persona>
+      <plazas_totales>30</plazas_totales>
+      <plazas_disponibles>14</plazas_disponibles>
+      <valoracion>4.5</valoracion>
+      <oferta>si</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Hotel céntrico 3 estrellas</item>
+        <item>Visita guiada al Coliseo</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P005">
+      <nombre>Maldivas Relax</nombre>
+      <destino>
+        <pais>Maldivas</pais>
+        <ciudad>Atolón Malé Norte</ciudad>
+        <continente>Asia</continente>
+      </destino>
+      <categoria>playa</categoria>
+      <duracion_dias>8</duracion_dias>
+      <fecha_salida>2025-08-10</fecha_salida>
+      <precio_persona>3999</precio_persona>
+      <plazas_totales>10</plazas_totales>
+      <plazas_disponibles>2</plazas_disponibles>
+      <valoracion>5.0</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Bungalow sobre el agua</item>
+        <item>Desayuno y cena incluidos</item>
+        <item>Snorkel y deportes acuáticos</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P006">
+      <nombre>Trekking en Nepal</nombre>
+      <destino>
+        <pais>Nepal</pais>
+        <ciudad>Katmandú - Base Everest</ciudad>
+        <continente>Asia</continente>
+      </destino>
+      <categoria>aventura</categoria>
+      <duracion_dias>14</duracion_dias>
+      <fecha_salida>2025-10-05</fecha_salida>
+      <precio_persona>2200</precio_persona>
+      <plazas_totales>8</plazas_totales>
+      <plazas_disponibles>8</plazas_disponibles>
+      <valoracion>4.7</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Alojamiento en lodges</item>
+        <item>Guía de montaña certificado</item>
+        <item>Permisos de trekking</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P007">
+      <nombre>Nueva York City Break</nombre>
+      <destino>
+        <pais>Estados Unidos</pais>
+        <ciudad>Nueva York</ciudad>
+        <continente>América</continente>
+      </destino>
+      <categoria>ciudad</categoria>
+      <duracion_dias>5</duracion_dias>
+      <fecha_salida>2025-11-28</fecha_salida>
+      <precio_persona>1450</precio_persona>
+      <plazas_totales>25</plazas_totales>
+      <plazas_disponibles>11</plazas_disponibles>
+      <valoracion>4.6</valoracion>
+      <oferta>si</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Hotel en Manhattan</item>
+        <item>Tarjeta transporte ilimitado</item>
+        <item>Visita a la Estatua de la Libertad</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P008">
+      <nombre>Costa Amalfitana</nombre>
+      <destino>
+        <pais>Italia</pais>
+        <ciudad>Nápoles - Positano - Amalfi</ciudad>
+        <continente>Europa</continente>
+      </destino>
+      <categoria>playa</categoria>
+      <duracion_dias>6</duracion_dias>
+      <fecha_salida>2025-06-28</fecha_salida>
+      <precio_persona>1100</precio_persona>
+      <plazas_totales>18</plazas_totales>
+      <plazas_disponibles>7</plazas_disponibles>
+      <valoracion>4.7</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Hotel con vistas al mar</item>
+        <item>Excursión en barco</item>
+        <item>Traslados incluidos</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P009">
+      <nombre>Semana Santa en Marrakech</nombre>
+      <destino>
+        <pais>Marruecos</pais>
+        <ciudad>Marrakech</ciudad>
+        <continente>África</continente>
+      </destino>
+      <categoria>cultural</categoria>
+      <duracion_dias>5</duracion_dias>
+      <fecha_salida>2025-04-13</fecha_salida>
+      <precio_persona>780</precio_persona>
+      <plazas_totales>20</plazas_totales>
+      <plazas_disponibles>1</plazas_disponibles>
+      <valoracion>4.4</valoracion>
+      <oferta>si</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Riad tradicional 4 estrellas</item>
+        <item>Visita guiada a la medina</item>
+        <item>Excursión al desierto</item>
+      </incluye>
+    </paquete>
+
+    <paquete id="P010">
+      <nombre>Aventura en Patagonia</nombre>
+      <destino>
+        <pais>Argentina</pais>
+        <ciudad>Bariloche - Torres del Paine</ciudad>
+        <continente>América</continente>
+      </destino>
+      <categoria>aventura</categoria>
+      <duracion_dias>11</duracion_dias>
+      <fecha_salida>2025-12-01</fecha_salida>
+      <precio_persona>2600</precio_persona>
+      <plazas_totales>10</plazas_totales>
+      <plazas_disponibles>4</plazas_disponibles>
+      <valoracion>4.9</valoracion>
+      <oferta>no</oferta>
+      <incluye>
+        <item>Vuelo ida y vuelta</item>
+        <item>Alojamiento en cabañas</item>
+        <item>Equipo de trekking</item>
+        <item>Guía local bilingüe</item>
+      </incluye>
+    </paquete>
+
+  </paquetes>
+</agencia>
