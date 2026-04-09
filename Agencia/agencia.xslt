@@ -63,6 +63,7 @@
                       width: 400px;
                       height: 350px;
                       object-fit: cover;
+                      border-radius: 5px;
                 }
 
             .card h3 {
