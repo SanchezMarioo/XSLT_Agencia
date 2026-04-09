@@ -101,9 +101,12 @@
                 <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
                 <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
                 <img>
-                  <xsl:attribute name="src">
-                    <xsl:value-of select="imagen"/>
-                  </xsl:attribute>
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="imagen/url"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="imagen/descripcion"/>
+                    </xsl:attribute>
                 </img>
                 <p>
                   <xsl:choose>
@@ -136,9 +139,12 @@
                 <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
                 <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
                 <img>
-                  <xsl:attribute name="src">
-                    <xsl:value-of select="imagen"/>
-                  </xsl:attribute>
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="imagen/url"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="imagen/descripcion"/>
+                    </xsl:attribute>
                 </img>
                 <p>
                   <xsl:choose>
@@ -171,9 +177,12 @@
                 <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
                 <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
                 <img>
-                  <xsl:attribute name="src">
-                    <xsl:value-of select="imagen"/>
-                  </xsl:attribute>
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="imagen/url"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="imagen/descripcion"/>
+                    </xsl:attribute>
                 </img>
                 <p>
                   <xsl:choose>
@@ -206,9 +215,12 @@
                 <p>Precio: <xsl:value-of select="precio_persona"/> EUR</p>
                 <p>Plazas disponibles: <xsl:value-of select="plazas_disponibles"/></p>
                 <img>
-                  <xsl:attribute name="src">
-                    <xsl:value-of select="imagen"/>
-                  </xsl:attribute>
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="/imagen/url"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="imagen/descripcion"/>
+                    </xsl:attribute>
                 </img>
                 <p>
                   <xsl:choose>

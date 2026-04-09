@@ -2,6 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="agencia.xslt"?>
 <agencia nombre="Viajes Horizonte">
   <paquetes>
+
     <paquete id="P001">
       <nombre>Cancún Todo Incluido</nombre>
       <destino>
@@ -17,7 +18,10 @@
       <plazas_disponibles>3</plazas_disponibles>
       <valoracion>4.8</valoracion>
       <oferta>si</oferta>
-      <imagen>https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=400</url>
+        <descripcion>Playa de arena blanca en Cancún con aguas turquesas</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Hotel 5 estrellas</item>
@@ -25,6 +29,7 @@
         <item>Todo incluido</item>
       </incluye>
     </paquete>
+
     <paquete id="P002">
       <nombre>Ruta por Japón</nombre>
       <destino>
@@ -40,7 +45,10 @@
       <plazas_disponibles>0</plazas_disponibles>
       <valoracion>5.0</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400</url>
+        <descripcion>Templo tradicional japonés rodeado de cerezos en flor</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Hoteles 4 estrellas</item>
@@ -48,6 +56,7 @@
         <item>Transporte entre ciudades</item>
       </incluye>
     </paquete>
+
     <paquete id="P003">
       <nombre>Safari en Kenia</nombre>
       <destino>
@@ -63,7 +72,10 @@
       <plazas_disponibles>5</plazas_disponibles>
       <valoracion>4.9</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400</url>
+        <descripcion>Manada de elefantes cruzando la sabana del Masái Mara</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Lodge en parque natural</item>
@@ -71,6 +83,7 @@
         <item>Guía especializado en fauna</item>
       </incluye>
     </paquete>
+
     <paquete id="P004">
       <nombre>Escapada a Roma</nombre>
       <destino>
@@ -86,13 +99,17 @@
       <plazas_disponibles>14</plazas_disponibles>
       <valoracion>4.5</valoracion>
       <oferta>si</oferta>
-      <imagen>https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400</url>
+        <descripcion>Vista panorámica del Coliseo romano al atardecer</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Hotel céntrico 3 estrellas</item>
         <item>Visita guiada al Coliseo</item>
       </incluye>
     </paquete>
+
     <paquete id="P005">
       <nombre>Maldivas Relax</nombre>
       <destino>
@@ -108,7 +125,10 @@
       <plazas_disponibles>2</plazas_disponibles>
       <valoracion>5.0</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=400</url>
+        <descripcion>Bungalow sobre el agua rodeado de laguna cristalina en Maldivas</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Bungalow sobre el agua</item>
@@ -116,6 +136,7 @@
         <item>Snorkel y deportes acuáticos</item>
       </incluye>
     </paquete>
+
     <paquete id="P006">
       <nombre>Trekking en Nepal</nombre>
       <destino>
@@ -131,7 +152,10 @@
       <plazas_disponibles>8</plazas_disponibles>
       <valoracion>4.7</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400</url>
+        <descripcion>Senderistas ascendiendo hacia el campo base del Everest entre montañas nevadas</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Alojamiento en lodges</item>
@@ -139,6 +163,7 @@
         <item>Permisos de trekking</item>
       </incluye>
     </paquete>
+
     <paquete id="P007">
       <nombre>Nueva York City Break</nombre>
       <destino>
@@ -154,7 +179,10 @@
       <plazas_disponibles>11</plazas_disponibles>
       <valoracion>4.6</valoracion>
       <oferta>si</oferta>
-      <imagen>https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400</url>
+        <descripcion>Skyline de Manhattan con el puente de Brooklyn al amanecer</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Hotel en Manhattan</item>
@@ -162,6 +190,7 @@
         <item>Visita a la Estatua de la Libertad</item>
       </incluye>
     </paquete>
+
     <paquete id="P008">
       <nombre>Costa Amalfitana</nombre>
       <destino>
@@ -177,7 +206,10 @@
       <plazas_disponibles>7</plazas_disponibles>
       <valoracion>4.7</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=400</url>
+        <descripcion>Coloridas casas de Positano escalonadas sobre los acantilados del Mediterráneo</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Hotel con vistas al mar</item>
@@ -185,6 +217,7 @@
         <item>Traslados incluidos</item>
       </incluye>
     </paquete>
+
     <paquete id="P009">
       <nombre>Semana Santa en Marrakech</nombre>
       <destino>
@@ -200,7 +233,10 @@
       <plazas_disponibles>1</plazas_disponibles>
       <valoracion>4.4</valoracion>
       <oferta>si</oferta>
-      <imagen>https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=400</url>
+        <descripcion>Bulliciosa plaza Jemaa el-Fna en el corazón de la medina de Marrakech</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Riad tradicional 4 estrellas</item>
@@ -208,6 +244,7 @@
         <item>Excursión al desierto</item>
       </incluye>
     </paquete>
+
     <paquete id="P010">
       <nombre>Aventura en Patagonia</nombre>
       <destino>
@@ -223,7 +260,10 @@
       <plazas_disponibles>4</plazas_disponibles>
       <valoracion>4.9</valoracion>
       <oferta>no</oferta>
-      <imagen>https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400</imagen>
+      <imagen>
+        <url>https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400</url>
+        <descripcion>Torres del Paine reflejadas en un lago glaciar de la Patagonia argentina</descripcion>
+      </imagen>
       <incluye>
         <item>Vuelo ida y vuelta</item>
         <item>Alojamiento en cabañas</item>
@@ -231,5 +271,6 @@
         <item>Guía local bilingüe</item>
       </incluye>
     </paquete>
+
   </paquetes>
 </agencia>
